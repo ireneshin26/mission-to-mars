@@ -35,6 +35,7 @@ def index():
    # Update the database using .update_one()
    # upsert=True indicates to Mongo to create a new document if one doesn't already exist, and new data will always be saved (even if a document hasn't already been created for it)
    # Add redirect after successfully scraping the data to navigate the page back to / where the updated content can be seen
+
 @app.route("/scrape")
 def scrape():
    mars = mongo.db.mars
